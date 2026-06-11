@@ -145,9 +145,8 @@ export default function PrideFramePage() {
   };
 
   return (
-    <main className="min-h-screen bg-white text-neutral-950">
-      <div className="mx-auto max-w-5xl px-4 py-10 sm:py-16">
-        <header className="mb-10 text-center">
+<section  className="mx-auto max-w-5xl px-4 py-10 sm:py-16">
+    <header className="mb-10 text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
             <span
               className="bg-clip-text text-transparent"
@@ -159,15 +158,16 @@ export default function PrideFramePage() {
             </span>
           </h1>
           <p className="mt-3 text-neutral-500">
-            Upload a photo, position it, and download it with a rainbow frame.
-            Runs entirely in your browser — nothing is uploaded or stored.
+            Upload a photo, position it, and download it with a rainbow frame. <br/>
+            Runs entirely in your browser, nothing is uploaded or stored.
           </p>
         </header>
-
-        <div className="grid gap-8 md:grid-cols-[1fr_280px]">
-          <div className="flex flex-col items-center">
+    <main className=" bg-white text-neutral-950">
+   
+        <div className="sm:flex gap-8 justify-center">
+          <div className="flex flex-col items-center mb-8">
             <div
-              className="relative w-full max-w-[560px] aspect-square overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50"
+              className="relative w-full max-w-80 aspect-square overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50"
               onPointerDown={handlePointerDown}
               onPointerMove={handlePointerMove}
               onPointerUp={handlePointerUp}
@@ -278,12 +278,16 @@ export default function PrideFramePage() {
               Download PNG
             </button>
 
-            <p className="text-xs text-neutral-500">
+            <p className="text-xs mt-[-16]">
               Output is a 1080×1080 PNG, ready to share.
             </p>
           </aside>
         </div>
-      </div>
     </main>
+<footer className="py-4 text-right text-xs"> Made by <a target="_blank" href="https://www.linkedin.com/in/zsuzsa-lukacs/" rel="noopener noreferrer">Zsuzsa</a>.
+ See source code at my <a target="_blank" href="https://github.com/ZsuzsaMano/Pride-frame" rel="noopener noreferrer">Github </a> repo
+</footer>
+</section>
+
   );
 }
