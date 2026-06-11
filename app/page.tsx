@@ -157,7 +157,7 @@ export default function PrideFramePage() {
               Pride Frame
             </span>
           </h1>
-          <p className="mt-3 text-neutral-500">
+          <p className="mt-3 text-sm sm:text-lg text-neutral-500">
             Upload a photo, position it, and download it with a rainbow frame. <br/>
             Runs entirely in your browser, nothing is uploaded or stored.
           </p>
